@@ -95,7 +95,7 @@ public with sharing class ClassesObjectsMethods {
             Set<String> uniqueWords = new Set<String>();
 
         // Add each word to the set
-            for(String word : words){
+            for (String word : words){
                 uniqueWords.add(word);
             }
 
@@ -115,16 +115,18 @@ public with sharing class ClassesObjectsMethods {
      */
     public static Integer countVowels(String str) {
         // Initialize the result Integer
-
-        /*
-        for () {
+            Integer countResult = 0;
+        
+        for (Integer i = 0; i < str.length(); i++ ) {
             // get individual characters from the string - hint use substring or split
+            String singleCharacter = str.substring(i, i+1).toLowerCase();
             // check if the character is a vowel
-            // if it is a vowel, increment the result Integer
+                if (singleCharacter.contains('a') || singleCharacter.contains('e') || singleCharacter.contains('i') || singleCharacter.contains('o') || singleCharacter.contains('u')) {
+                // if it is a vowel, increment the result Integer
+                    countResult++;
+            }
         }
-        */
-
-        return null; // Replace null with the variable you used to store the result
+        return countResult; // Replace null with the variable you used to store the result
     }
 
     /**
