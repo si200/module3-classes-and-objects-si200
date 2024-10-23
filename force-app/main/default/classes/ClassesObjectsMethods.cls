@@ -67,14 +67,17 @@ public with sharing class ClassesObjectsMethods {
      */
     public static List<Boolean> checkStringContent(String input) {
         // Initialize a list to store the results
-        
+        List<Boolean> contents = new List<Boolean>();
         // Check if the string starts with 'Sales'
-        
+            contents.add(input.startsWith('Sales'));
+
         // Check if the string ends with 'Force'
-        
+            contents.add(input.endsWith('Force'));
+
         // Check if the string contains 'Awesome'
+            contents.add(input.contains('Awesome'));
         
-        return null; // Replace null with the variable you used to store the result
+        return contents; // Replace null with the variable you used to store the result
     }
 
     /**
