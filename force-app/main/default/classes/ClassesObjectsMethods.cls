@@ -200,11 +200,13 @@ public with sharing class ClassesObjectsMethods {
      */
     public static String getCurrentDate() {
         // Get the todays date
+        Date today = Date.today();
 
         // Format the current date
-
+        String todayFormatted = today.format();
+    
         // Return the result
-        return null; // Replace null with the variable you used to store the result
+        return todayFormatted; // Replace null with the variable you used to store the result
     }
 
     /**
