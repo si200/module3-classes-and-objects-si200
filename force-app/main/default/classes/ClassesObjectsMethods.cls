@@ -448,7 +448,6 @@ public with sharing class ClassesObjectsMethods {
         return persons; // Replace null with the variable you used to store the result
     }
 
-
     /**
      * Question 18
      * Compare two Person objects based on their ages.
@@ -460,6 +459,12 @@ public with sharing class ClassesObjectsMethods {
      * @return The Person object of the older person.
      */
     public static Person getOlderPerson(Person person1, Person person2) {
-        return null; // Replace null with the variable you used to store the result
+        if (person1.getAge() > person2.getAge()) {
+                return person1;
+        }else if (person2.getAge() > person1.getAge()) {
+                return person2;
+        }else {
+        return person1; // Replace null with the variable you used to store the result
+        }
     }
 }
