@@ -433,15 +433,19 @@ public with sharing class ClassesObjectsMethods {
      * @return A list of new Person objects.
      */
     public static List<Person> createMultiplePersons(List<String> names, Integer age) {
+        List<Person> persons = new List<Person>();
 
         // Loop through each name in the provided list of names
+        for (String name : names) {  
+
             // Create a new Person object for each name
-            
+            Person person = new Person(name, age);
+
             // Add the new Person object to the list of Person objects
-        
-        
+            persons.add(person);
+        }
         // Return the list of Person objects
-        return null; // Replace null with the variable you used to store the result
+        return persons; // Replace null with the variable you used to store the result
     }
 
 
