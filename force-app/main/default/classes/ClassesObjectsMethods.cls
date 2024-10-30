@@ -277,7 +277,7 @@ public with sharing class ClassesObjectsMethods {
         public String getBookDetails() {
 
             // return A string containing the details of the book in the format "Title: <title>, Author: <author>"
-            return 'Title: ' + title + ', Author: ' + author; // Replace null with the variable you used to store the result
+            return 'Title: ' + this.title + ', Author: ' + this.author; // Replace null with the variable you used to store the result
         }
     }
     
@@ -356,17 +356,17 @@ public with sharing class ClassesObjectsMethods {
 
         // Return a string in the format "Hello, my name is <name> and I am <age> years old."
         // For example, introduceYourself() should return a string like "Hello, my name is John Doe and I am 28 years old."
-            return 'Hello, my name is ' + name + ' and I am ' + age + ' years old.';
+            return 'Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.';
         }
 
         // Getter method that returns the name of the person
         public String getName(){
-            return name;
+            return this.name;
         }
 
         // Getter method that returns the age of the person
         public Integer getAge(){
-            return age;
+            return this.age;
         }
 
         // Setter method that sets the name of the person
